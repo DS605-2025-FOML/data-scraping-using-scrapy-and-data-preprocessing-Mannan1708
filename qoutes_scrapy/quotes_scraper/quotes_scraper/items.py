@@ -7,8 +7,9 @@
 
 import scrapy
 
-class QuoteItem(scrapy.Item):
-    # define the fields for your item here like:
-    text = scrapy.Field()
-    author = scrapy.Field()
-    tags = scrapy.Field()
+class MannanScrapyItem(scrapy.Item):
+    title = scrapy.Field()
+    price = scrapy.Field()
+    availability = scrapy.Field()
+    rating = scrapy.Field()
+    product_page = scrapy.Field()  
